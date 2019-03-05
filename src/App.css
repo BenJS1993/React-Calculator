@@ -29,20 +29,9 @@ body {
   width: 0;
 }
 
-/* .App::before {
-  position: absolute;
-  content: '';
-  background: #bdc7b7;
-  width: 100%;
-  height: 10px;
-  top: 100%;
-  left: 10px;
-  opacity: 1;
-} */
-
 .Display {
-  background: #2B293D;
-  color: #59C3C3;
+  background: black;
+  color: white;
   text-shadow: 0 0 5px rgba(89, 195, 195, 0.5);
   display: flex;
   justify-content: flex-end;
@@ -87,24 +76,29 @@ body {
 }
 
 .Button {
-  background: #cad2c5;
+  background: #fff;
   /* Old browsers */
-  background: -moz-linear-gradient(45deg, #cad2c5 0%, #abb5aa 100%);
+  /* background: -moz-linear-gradient(45deg, #cad2c5 0%, #abb5aa 100%); */
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #cad2c5 0%, #abb5aa 100%);
+  /* background: -webkit-linear-gradient(45deg, #cad2c5 0%, #abb5aa 100%); */
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #cad2c5 0%, #abb5aa 100%);
+  /* background: linear-gradient(45deg, #cad2c5 0%, #abb5aa 100%); */
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cad2c5', endColorstr='#abb5aa', GradientType=1);
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cad2c5', endColorstr='#abb5aa', GradientType=1); */
   /* IE6-9 fallback on horizontal gradient */
   display: flex;
+  position: relative;
   box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  border-image-slice: 2;
+  border-image-width: 2;
+  border-image-repeat: stretch;
+  border-image-outset: 2;
   align-items: center;
   justify-content: center;
   width: 25%;
   font-size: 24px;
-  color: rgba(0, 0, 0, 0.5);
+  color: #212529;
   height: 20%;
   min-width: 25%;
 }
@@ -118,7 +112,7 @@ body {
 }
 
 .Button:hover {
-  background: #d7ddd3;
+  background: #adafbc;
   cursor: pointer;
 }
 
